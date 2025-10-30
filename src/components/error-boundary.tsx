@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Button } from '@/components/ui/button'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { AlertCircle, RefreshCw, Home } from 'lucide-react'
+import { logger } from '@/lib/logger'
 
 interface Props {
   children: ReactNode
@@ -45,13 +46,13 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // Log error to console in development
-    if (process.env.NODE_ENV === 'development') {
-      console.error('Error capturado por ErrorBoundary:', error, errorInfo)
-    }
-    
-    // TODO: Enviar error a servicio de monitoreo (Sentry, LogRocket, etc)
-    // logErrorToService(error, errorInfo)
+    // Logging centralizado con servicio
+    logger.captureException(error, {
+      component: 'ErrorBoundary',
+      metadata: {
+        componentStack: errorInfo.componentStack,
+      },
+    })
     
     this.setState({
       error,

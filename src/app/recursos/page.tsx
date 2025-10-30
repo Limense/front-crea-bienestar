@@ -5,6 +5,18 @@ import { Badge } from '@/components/ui/badge'
 import { crearClienteServidor } from '@/lib/supabase/servidor'
 import { BookOpen, Download, ExternalLink, FileText, Video, Music, Image as ImageIcon } from 'lucide-react'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Recursos de Bienestar - CREA Bienestar',
+  description: 'Accede a videos, guías, PDFs y recursos educativos sobre salud mental y bienestar estudiantil en EESPP CREA.',
+  keywords: ['recursos', 'salud mental', 'autocuidado', 'videos educativos', 'guías', 'EESPP CREA'],
+  openGraph: {
+    title: 'Recursos de Bienestar - CREA Bienestar',
+    description: 'Biblioteca de recursos educativos sobre bienestar estudiantil',
+    type: 'website',
+  },
+}
 
 export default async function RecursosPage() {
   const supabase = await crearClienteServidor()
