@@ -296,11 +296,32 @@ Sistema **WCAG 2.1 Level AA** compliant:
 - [x] Recursos biblioteca
 - [x] RLS completo
 - [x] UX profesional (skeletons, animations, a11y)
+- [x] **Chatbot con Gemini API** ✨ (75% - falta testing)
+  - [x] Detección de palabras clave (80+)
+  - [x] Análisis de sentimientos
+  - [x] Scoring de riesgo (0-100)
+  - [x] Alertas automáticas
+  - [x] UI conversacional
+  - [ ] Testing + validación psicólogo
+- [x] **Sistema de Alertas** ✨ (80% - falta testing)
+  - [x] Dashboard de alertas con estadísticas
+  - [x] Filtros avanzados (nivel/estado/asignación)
+  - [x] Asignación y gestión de alertas
+  - [x] Detalle con historial de conversación
+  - [ ] Notificaciones realtime
+  - [ ] Testing completo
 
 ### En Progreso 🚧
 
-- [ ] Chatbot con Gemini API
-- [ ] Sistema de alertas
+- [x] **Sistema de alertas** ✨ NUEVO (80% completo)
+  - [x] Server Actions para gestión de alertas
+  - [x] Dashboard con estadísticas
+  - [x] Filtros por nivel/estado/asignación
+  - [x] Detalle de alerta con conversación
+  - [x] Asignación de alertas a tutores
+  - [x] Cambio de estado (pendiente/en progreso/resuelto)
+  - [ ] Notificaciones realtime
+  - [ ] Testing completo
 - [ ] Talleres completos
 
 ### Próximas Features 🔮

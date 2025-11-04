@@ -5,7 +5,7 @@ export type TipoCita = 'psicologia' | 'medicina_ocupacional'
 export type ModalidadCita = 'presencial' | 'virtual'
 export type EstadoCita = 'pendiente' | 'confirmada' | 'completada' | 'cancelada'
 
-export type NivelRiesgo = 'ALTO' | 'MEDIO' | 'BAJO'
+export type NivelRiesgo = 'CRÍTICO' | 'ALTO' | 'MEDIO' | 'BAJO'
 export type TipoProblema = 'economico' | 'emocional' | 'academico' | 'vocacional' | 'familiar' | 'salud'
 export type EstadoAlerta = 'pendiente' | 'en_progreso' | 'resuelto' | 'cerrado'
 

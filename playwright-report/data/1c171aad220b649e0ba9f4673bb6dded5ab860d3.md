@@ -1,0 +1,47 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "CREA Bienestar" [level=1] [ref=e5]
+        - paragraph [ref=e6]: Tu compañera de bienestar durante tu formación como maestra de educación inicial
+        - generic [ref=e7]:
+          - link "Iniciar Sesión" [ref=e8] [cursor=pointer]:
+            - /url: /login
+            - button "Iniciar Sesión" [ref=e9]
+          - link "Registrarse" [ref=e10] [cursor=pointer]:
+            - /url: /registro
+            - button "Registrarse" [ref=e11]
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - img [ref=e14]
+          - heading "Asistente IA 24/7" [level=3] [ref=e16]
+          - paragraph [ref=e17]: Conversa con nuestro chatbot siempre que lo necesites
+        - generic [ref=e18]:
+          - img [ref=e19]
+          - heading "Agenda de Citas" [level=3] [ref=e21]
+          - paragraph [ref=e22]: Reserva consultas psicológicas y médicas fácilmente
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - heading "Recursos de Autocuidado" [level=3] [ref=e26]
+          - paragraph [ref=e27]: Accede a guías, videos y talleres de bienestar
+        - generic [ref=e28]:
+          - img [ref=e29]
+          - heading "Seguimiento Personalizado" [level=3] [ref=e32]
+          - paragraph [ref=e33]: Acompañamiento continuo durante tu carrera
+      - generic [ref=e34]:
+        - heading "¿Necesitas ayuda ahora?" [level=2] [ref=e35]
+        - paragraph [ref=e36]: Nuestro equipo de bienestar está aquí para apoyarte
+        - link "Habla con Nosotros" [ref=e37] [cursor=pointer]:
+          - /url: /login
+          - button "Habla con Nosotros" [ref=e38]
+    - contentinfo [ref=e39]:
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: © 2025 CREA Bienestar - Escuela de Educación Superior Pedagógica CREA
+        - paragraph [ref=e42]: Av. Aguarico 1015, Breña, Lima
+  - button "Open Next.js Dev Tools" [ref=e48] [cursor=pointer]:
+    - img [ref=e49]
+  - alert [ref=e52]
+```
